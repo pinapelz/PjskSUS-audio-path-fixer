@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PJSKSus CAPF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PJSK SUS Chart Audio Path Fixer</h1>
+    <p>Quickly fixes the audio path of SUS (<a href="https://gist.github.com/kb10uy/c171c175ba913dc40a73c6ce69da9859"> Sliding Universal Score </a>)charts for use in a simulator like Umiguri. Designed to be used with <a href="https://github.com/Qrael/PjskSUSPatcher">PjskSUSPatcher</a> (although you can use it with other stuff if you have a specific use case). <br/><br/>Add the zip file containing the .sus charts and audio files and the tool will pick it up.<br/><br/> All operations are handled locally, nothing is uploaded</p>
+    <input type="file" id="zipInput" accept=".zip" />
+    <div id="fileList"></div>
+    <button id="downloadAll" style="display:none;">Download Patched Files</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jszip/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip-utils/dist/jszip-utils.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
